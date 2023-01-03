@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  --primary-color: #ccc6c9;
+  --secondary-color: black;
+  --tertiary-color: #d1926d;
+  --quaternary-color: #3b8769;
+  --quinary-color: #ffe9d0;
+  --senary-color: #a17c6b;
+}
+
 img {
   max-width: 100%;
 }
@@ -34,7 +43,7 @@ nav ul li a {
   text-decoration: none;
   letter-spacing: 7px;
   font-style: normal;
-  color: black;
+  color: var(--secondary-color);
   text-align: center;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -45,7 +54,7 @@ nav ul li a:hover {
   padding: 0.5rem;
   font-size: 1rem;
   font-family: Quicksand;
-  color: #d1926d;
+  color: var(--tertiary-color);
 }
 
 .forsidebillede {
@@ -60,9 +69,13 @@ nav ul li a:hover {
   z-index: -1;
 }
 
+body {
+  background-color: var(--primary-color);
+}
+
 h1 {
   font-family: Fredericka the Great;
-  color: #d1926d;
+  color: var(--tertiary-color);
   font-size: 3.2rem;
   padding-top: 7rem;
   letter-spacing: 5px;
@@ -72,35 +85,86 @@ h2 {
   font-family: Quicksand;
   letter-spacing: 7px;
   padding-bottom: 20px;
-  color: #3b8769;
+  color: var(--quaternary-color);
   font-size: 4rem;
+}
+
+h3 {
+  font-family: Quicksand;
+  letter-spacing: 5px;
+  padding-bottom: 20px;
+  color: #3b8769;
+  font-size: 30px;
+  margin-left: 150px;
 }
 
 p {
   font-family: Quicksand;
   letter-spacing: 2px;
-  padding-bottom: 20rem;
+  margin-bottom: 5rem;
 }
 
+/*tekst nederst på forsiden*/
+.h2cv {
+  font-family: Fredericka the Great;
+  color: var(--tertiary-color);
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.pcv {
+  font-family: Quicksand;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 100px;
+}
+
+.pcv2 {
+  letter-spacing: 2px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+.imgcv {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  margin-bottom: 20px;
+}
+/*ornage one line*/
+.streg {
+  width: 105%;
+}
+
+/*teksten i til temaikoner*/
 .grid5p {
-  color: #ffe9d0;
+  color: var(--quinary-color);
   padding-top: 10px;
+  margin-bottom: 150px;
 }
 
+/*forsidegrid øverst*/
 .grid1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+/*grid til temaikoner*/
 .grid1_1_1_1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   display: flex;
   justify-content: center;
-  background-color: #a17c6b;
+  background-color: var(--senary-color);
   text-align: center;
   padding-top: 8rem;
 }
 
+/*temaikoner på brun baggrund*/
 .ikon {
   padding: 4rem;
 }
