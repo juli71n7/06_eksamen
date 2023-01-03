@@ -93,7 +93,7 @@ h3 {
   font-family: Quicksand;
   letter-spacing: 5px;
   padding-bottom: 20px;
-  color: #3b8769;
+  color: var(--quaternary-color);
   font-size: 30px;
   margin-left: 150px;
 }
@@ -110,9 +110,17 @@ p {
   color: var(--tertiary-color);
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
+.h3cv {
+  font-family: Quicksand;
+  letter-spacing: 5px;
+  padding-bottom: 20px;
+  color: var(--quaternary-color);
+  font-size: 30px;
+  margin-left: 150px;
+}
 .pcv {
   font-family: Quicksand;
   letter-spacing: 2px;
@@ -124,7 +132,7 @@ p {
 
 .pcv2 {
   letter-spacing: 2px;
-  margin-left: 100px;
+  margin-left: 150px;
   margin-bottom: 30px;
 }
 
@@ -167,4 +175,107 @@ p {
 /*temaikoner på brun baggrund*/
 .ikon {
   padding: 4rem;
+}
+
+/*java %bar animation*/
+#skillbar_container,
+#skillbar_container1,
+#skillbar_container2,
+#skillbar_container3,
+#skillbar_container4 {
+  width: 70%;
+  aspect-ratio: 20/1;
+  border: solid;
+  border-radius: 5px;
+  border-width: thin;
+  margin-bottom: 40px;
+  margin-right: 2rem;
+  background-color: gray;
+}
+
+#skillbar_sprite,
+#skillbar_sprite1,
+#skillbar_sprite2,
+#skillbar_sprite3,
+#skillbar_sprite4 {
+  width: 100%;
+  height: 100%;
+  background-color: var(--tertiary-color);
+  transform-origin: left;
+  border-radius: 5px;
+}
+
+.tid {
+  animation-name: tid_kf;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+/*0.8 er x akse i from*/
+@keyframes tid_kf {
+  from {
+    scale: 0 1;
+  }
+  to {
+    scale: 0.7 1;
+  }
+}
+
+.tid1 {
+  animation-name: tid1_kf;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tid1_kf {
+  from {
+    scale: 0 1;
+  }
+  to {
+    scale: 0.6 1;
+  }
+}
+.tid2 {
+  animation-name: tid2_kf;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tid2_kf {
+  from {
+    scale: 0 1;
+  }
+  to {
+    scale: 0.3 1;
+  }
+}
+
+.tid3 {
+  animation-name: tid3_kf;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tid3_kf {
+  from {
+    scale: 0 1;
+  }
+  to {
+    scale: 0.5 1;
+  }
+}
+
+.tid4 {
+  animation-name: tid4_kf;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tid4_kf {
+  from {
+    scale: 0 1;
+  }
+  to {
+    scale: 0.2 1;
+  }
 }
