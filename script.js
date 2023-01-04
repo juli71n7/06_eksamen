@@ -7,4 +7,5 @@ function skillBar() {
   document.querySelector("#skillbar_sprite2").classList.add("tid2");
   document.querySelector("#skillbar_sprite3").classList.add("tid3");
   document.querySelector("#skillbar_sprite4").classList.add("tid4");
+  document.querySelector("#skillbar_sprite5").classList.add("tid5");
 }

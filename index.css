@@ -17,6 +17,35 @@ img {
   max-width: 100%;
 }
 
+.forsidebillede {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.imgcv {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  margin-bottom: 20px;
+}
+
+.imgline {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -57,57 +86,51 @@ nav ul li a:hover {
   color: var(--tertiary-color);
 }
 
-.forsidebillede {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
 body {
   background-color: var(--primary-color);
 }
 
-h1 {
+.forsidesection {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.forsidesection1 {
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+footer {
+  background-color: var(--senary-color);
+}
+
+/*************************************** tekst *****************************************/
+
+.forsideh1 {
   font-family: Fredericka the Great;
   color: var(--tertiary-color);
-  font-size: 3.2rem;
+  font-size: 2.9rem;
   padding-top: 7rem;
   letter-spacing: 5px;
 }
 
-h2 {
+.forsideh2 {
   font-family: Quicksand;
   letter-spacing: 7px;
   padding-bottom: 20px;
   color: var(--quaternary-color);
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
-h3 {
-  font-family: Quicksand;
-  letter-spacing: 5px;
-  padding-bottom: 20px;
-  color: var(--quaternary-color);
-  font-size: 30px;
-  margin-left: 150px;
-}
-
-p {
-  font-family: Quicksand;
-  letter-spacing: 2px;
-  margin-bottom: 5rem;
-}
-
-/*tekst nederst på forsiden*/
 .h2cv {
   font-family: Fredericka the Great;
   color: var(--tertiary-color);
+  font-size: 3rem;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 2rem;
@@ -117,51 +140,110 @@ p {
   font-family: Quicksand;
   letter-spacing: 5px;
   padding-bottom: 20px;
+  padding-top: 30px;
   color: var(--quaternary-color);
   font-size: 30px;
-  margin-left: 150px;
+  border-bottom: 1px solid var(--tertiary-color);
+  margin-bottom: 20px;
 }
-.pcv {
+
+.h3cva {
   font-family: Quicksand;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  color: var(--quaternary-color);
+  font-size: 30px;
+  border-bottom: 1px solid var(--tertiary-color);
+  margin-bottom: 20px;
+  margin-top: 200px;
+}
+
+/*den fede sorte underoverskrift*/
+.h4cv {
+  font-family: Quicksand;
+  letter-spacing: 1.5px;
+  color: var(--secondary-color);
+  width: 90%;
+}
+
+.forsidep {
+  font-family: Quicksand;
+  letter-spacing: 1.5px;
+  margin-bottom: 7rem;
+  color: var(--secondary-color);
+}
+
+.pcvtop {
+  font-family: Quicksand;
+  letter-spacing: 1.5px;
   text-align: center;
   margin-left: 300px;
   margin-right: 300px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  color: var(--secondary-color);
 }
 
-.pcv2 {
-  letter-spacing: 2px;
-  margin-left: 150px;
-  margin-bottom: 30px;
+.pcvright {
+  font-family: Quicksand;
+  letter-spacing: 1.5px;
+  width: 90%;
+  color: var(--secondary-color);
 }
 
-.imgcv {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 15%;
-  margin-bottom: 20px;
-}
-/*ornage one line*/
-.streg {
-  width: 105%;
+.pkontakt {
+  font-family: Quicksand;
+  letter-spacing: 1.5px;
+  padding-bottom: 25px;
+  width: 90%;
+  color: var(--secondary-color);
 }
 
-/*teksten i til temaikoner*/
-.grid5p {
+.ptema {
+  font-family: Quicksand;
   color: var(--quinary-color);
   padding-top: 10px;
   margin-bottom: 150px;
 }
 
-/*forsidegrid øverst*/
-.grid1_1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+/*ornage one line*/
+.streg {
+  width: 100%;
 }
 
-/*grid til temaikoner*/
+.somelogo {
+  display: block;
+  margin-left: auto;
+}
+
+.box {
+  border: 1px solid var(--tertiary-color);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/*** gør så ikoner kan være ved siden af tekst på CV med float***/
+.vedsidenaf1 {
+  float: right;
+  width: 90%;
+}
+
+.vedsidenaf2 {
+  float: left;
+  width: 10%;
+}
+
+.cvikon {
+  display: block;
+  width: 70%;
+}
+
+/*temaikoner på brun baggrund*/
+.ikon {
+  padding: 4rem;
+}
+
+/****************************************** Grid ********************************/
+/* grid til tema ikoner */
 .grid1_1_1_1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -170,25 +252,58 @@ p {
   background-color: var(--senary-color);
   text-align: center;
   padding-top: 8rem;
+  width: 100%;
 }
 
-/*temaikoner på brun baggrund*/
-.ikon {
-  padding: 4rem;
+/*forsidegrid øverst*/
+.grid1_1a {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-/*java %bar animation*/
+/*forsidegrid nederst*/
+.grid1_1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  padding-bottom: 70px;
+}
+
+.grid1_1_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+}
+
+.grid1_1footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  gap: 15px;
+}
+
+/****************************************java %bar animation*************************************/
+
+.skillbarp {
+  font-family: Quicksand;
+  margin-bottom: 20px;
+  margin-top: 1px;
+  margin-right: 115px;
+  text-align: right;
+  letter-spacing: 1.5px;
+}
+
 #skillbar_container,
 #skillbar_container1,
 #skillbar_container2,
 #skillbar_container3,
-#skillbar_container4 {
+#skillbar_container4,
+#skillbar_container5 {
   width: 70%;
   aspect-ratio: 20/1;
   border: solid;
   border-radius: 5px;
   border-width: thin;
-  margin-bottom: 40px;
   margin-right: 2rem;
   background-color: gray;
 }
@@ -197,7 +312,8 @@ p {
 #skillbar_sprite1,
 #skillbar_sprite2,
 #skillbar_sprite3,
-#skillbar_sprite4 {
+#skillbar_sprite4,
+#skillbar_sprite5 {
   width: 100%;
   height: 100%;
   background-color: var(--tertiary-color);
@@ -277,5 +393,20 @@ p {
   }
   to {
     scale: 0.2 1;
+  }
+}
+
+.tid5 {
+  animation-name: tid5_kf;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tid5_kf {
+  from {
+    scale: 0 1;
+  }
+  to {
+    scale: 0.9 1;
   }
 }
