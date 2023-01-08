@@ -23,6 +23,16 @@ img {
   margin-right: auto;
   margin-top: 85px;
   width: 100%;
+  padding-bottom: 90px;
+}
+
+.streg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 90px;
+  margin-bottom: 30px;
 }
 
 header {
@@ -43,11 +53,11 @@ nav ul {
 }
 
 nav ul li {
-  width: 200px;
+  width: 100%;
 }
 
 nav ul li a {
-  padding: 0.5rem;
+  padding: 1.5rem;
   text-decoration: none;
   letter-spacing: 7px;
   font-style: normal;
@@ -59,7 +69,7 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 1.5rem;
   font-size: 1rem;
   font-family: Quicksand;
   color: var(--tertiary-color);
@@ -79,6 +89,15 @@ main {
 
 footer {
   background-color: var(--senary-color);
+}
+
+h1 {
+  font-family: Archivo black;
+  color: var(--tertiary-color);
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-bottom: 30px;
 }
 
 h2 {
@@ -104,15 +123,32 @@ p {
   display: block;
   margin-left: auto;
 }
+
+.box {
+  padding: 50px;
+  margin-top: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 1px solid var(--tertiary-color);
+}
 /******************************kanpper**************************/
-.knap {
+
+/*******flexknap  putter knapper i boks så de ligger ved siden af hinanden********/
+.flexknap {
   display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+
+.knap {
   font-family: Quicksand;
   background-color: var(--tertiary-color);
   color: var(--quinary-color);
   border-radius: 5px;
   justify-content: center;
   text-decoration: none;
+  padding: 15px 40px 15px 40px;
 }
 
 .knap:hover {
@@ -121,16 +157,38 @@ p {
 }
 
 .knappitch {
-  display: flex;
   font-family: Quicksand;
   background-color: var(--tertiary-color);
   color: var(--quinary-color);
   border-radius: 5px;
   justify-content: center;
   text-decoration: none;
+  text-align: center;
+  padding: 15px 55px 15px 55px;
+  margin-right: 50px;
 }
 
 .knappitch:hover {
+  color: var(--quinary-color);
+  background-color: var(--senary-color);
+}
+
+.flexdata {
+  display: flex;
+  padding-top: 30px;
+}
+
+.knapdata {
+  font-family: Quicksand;
+  background-color: var(--tertiary-color);
+  color: var(--quinary-color);
+  border-radius: 5px;
+  justify-content: center;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.knapdata:hover {
   color: var(--quinary-color);
   background-color: var(--senary-color);
 }
@@ -140,17 +198,22 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  background-color: var(--quinary-color);
   padding: 50px;
   margin-top: 50px;
   margin-bottom: 100px;
+}
+
+.grid1_1a {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding-bottom: 50px;
 }
 
 .grid1_1knap {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 80px;
-  grid-gap: 20px;
 }
 
 .grid1_1footer {

@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --primary-color: #ccc6c9;
+  --secondary-color: black;
+  --tertiary-color: #d1926d;
+  --quaternary-color: #3b8769;
+  --quinary-color: #ffe9d0;
+  --senary-color: #a17c6b;
+}
+
+img {
+  max-width: 100%;
+}
+
+.imgpc {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 85px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.streg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  font-family: Quicksand;
+  font-size: 1rem;
+  margin: 5px;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li {
+  width: 100%;
+}
+
+nav ul li a {
+  padding: 1.5rem;
+  text-decoration: none;
+  letter-spacing: 7px;
+  font-style: normal;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  padding: 1.5rem;
+  font-size: 1rem;
+  font-family: Quicksand;
+  color: var(--tertiary-color);
+}
+
+body {
+  background-image: url(img/webbg.svg);
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+footer {
+  background-color: var(--senary-color);
+}
+
+h1 {
+  font-family: Archivo black;
+  color: var(--tertiary-color);
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-bottom: 30px;
+}
+
+h2 {
+  font-family: Quicksand;
+  letter-spacing: 5px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  color: var(--quaternary-color);
+  font-size: 30px;
+  border-bottom: 1px solid var(--tertiary-color);
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: Quicksand;
+  letter-spacing: 1.5px;
+  padding-bottom: 25px;
+  width: 90%;
+  color: var(--secondary-color);
+}
+
+#textlink {
+  font-family: Quicksand;
+  color: black;
+}
+
+.somelogo {
+  display: block;
+  margin-left: auto;
+}
+
+.box {
+  padding: 50px;
+  margin-top: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 1px solid var(--tertiary-color);
+}
+/******************************kanpper**************************/
+
+/*******flexknap  putter knapper i boks så de ligger ved siden af hinanden********/
+.flexknap {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+.knapstudiestart {
+  font-family: Quicksand;
+  background-color: var(--tertiary-color);
+  color: var(--quinary-color);
+  border-radius: 5px;
+  justify-content: center;
+  text-decoration: none;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.knapstudiestart:hover {
+  color: var(--quinary-color);
+  background-color: var(--senary-color);
+}
+
+.knapemnesite {
+  font-family: Quicksand;
+  background-color: var(--tertiary-color);
+  color: var(--quinary-color);
+  border-radius: 5px;
+  justify-content: center;
+  text-decoration: none;
+  padding: 15px 40px 15px 40px;
+
+  margin-top: 20px;
+}
+
+.knapemnesite:hover {
+  color: var(--quinary-color);
+  background-color: var(--senary-color);
+}
+
+.flexprocess {
+  display: flex;
+  padding-top: 30px;
+}
+
+.knapprocess {
+  font-family: Quicksand;
+  background-color: var(--tertiary-color);
+  color: var(--quinary-color);
+  border-radius: 5px;
+  justify-content: center;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.knapprocess:hover {
+  color: var(--quinary-color);
+  background-color: var(--senary-color);
+}
+
+/****************************************grid**************************/
+.grid1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.grid1_1a {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+.gridimg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  padding-top: 80px;
+}
+
+.grid1_1knap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 80px;
+}
+
+.grid1_1footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  gap: 15px;
+}

@@ -9,7 +9,7 @@ html {
   --secondary-color: black;
   --tertiary-color: #d1926d;
   --quaternary-color: #3b8769;
-  --quinary-color: #ffe9d0;
+  --quinary-color: #fff2e4;
   --senary-color: #a17c6b;
 }
 
@@ -18,8 +18,8 @@ img {
 }
 
 .forsidebillede {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   position: absolute;
   left: 0;
@@ -46,6 +46,15 @@ img {
   margin-bottom: 100px;
 }
 
+.streg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -64,11 +73,11 @@ nav ul {
 }
 
 nav ul li {
-  width: 200px;
+  width: 100%;
 }
 
 nav ul li a {
-  padding: 0.5rem;
+  padding: 1.5rem;
   text-decoration: none;
   letter-spacing: 7px;
   font-style: normal;
@@ -80,7 +89,7 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 1.5rem;
   font-size: 1rem;
   font-family: Quicksand;
   color: var(--tertiary-color);
@@ -88,16 +97,6 @@ nav ul li a:hover {
 
 body {
   background-color: var(--primary-color);
-}
-
-.forsidesection {
-  max-width: 1200px;
-  margin-inline: auto;
-}
-
-.forsidesection1 {
-  max-width: 1920px;
-  margin-inline: auto;
 }
 
 main {
@@ -112,23 +111,29 @@ footer {
 /*************************************** tekst *****************************************/
 
 .forsideh1 {
-  font-family: Fredericka the Great;
+  font-family: Archivo black;
   color: var(--tertiary-color);
-  font-size: 2.9rem;
+  font-size: 4rem;
   padding-top: 7rem;
   letter-spacing: 5px;
 }
 
+@media (max-width: 1200px) {
+  .forsideh1 {
+    font-size: 2rem;
+  }
+}
+
 .forsideh2 {
   font-family: Quicksand;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
   padding-bottom: 20px;
   color: var(--quaternary-color);
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 .h2cv {
-  font-family: Fredericka the Great;
+  font-family: Archivo black;
   color: var(--tertiary-color);
   font-size: 3rem;
   text-align: center;
@@ -140,7 +145,7 @@ footer {
   font-family: Quicksand;
   letter-spacing: 5px;
   padding-bottom: 20px;
-  padding-top: 30px;
+  padding-top: 35px;
   color: var(--quaternary-color);
   font-size: 30px;
   border-bottom: 1px solid var(--tertiary-color);
@@ -151,17 +156,16 @@ footer {
   font-family: Quicksand;
   letter-spacing: 5px;
   padding-bottom: 20px;
-  padding-top: 30px;
+  padding-top: 116px;
   color: var(--quaternary-color);
   font-size: 30px;
   border-bottom: 1px solid var(--tertiary-color);
   margin-bottom: 20px;
-  margin-top: 200px;
 }
 
 /*den fede sorte underoverskrift*/
 .h4cv {
-  font-family: Quicksand;
+  font-family: Montserrat;
   letter-spacing: 1.5px;
   color: var(--secondary-color);
   width: 90%;
@@ -170,7 +174,6 @@ footer {
 .forsidep {
   font-family: Quicksand;
   letter-spacing: 1.5px;
-  margin-bottom: 7rem;
   color: var(--secondary-color);
 }
 
@@ -189,13 +192,13 @@ footer {
   letter-spacing: 1.5px;
   width: 90%;
   color: var(--secondary-color);
+  margin-bottom: 15px;
 }
 
 .pkontakt {
   font-family: Quicksand;
   letter-spacing: 1.5px;
-  padding-bottom: 25px;
-  width: 90%;
+  padding-bottom: 22px;
   color: var(--secondary-color);
 }
 
@@ -203,12 +206,7 @@ footer {
   font-family: Quicksand;
   color: var(--quinary-color);
   padding-top: 10px;
-  margin-bottom: 150px;
-}
-
-/*ornage one line*/
-.streg {
-  width: 100%;
+  margin-bottom: 5px;
 }
 
 .somelogo {
@@ -221,21 +219,6 @@ footer {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/*** gør så ikoner kan være ved siden af tekst på CV med float***/
-.vedsidenaf1 {
-  float: right;
-  width: 90%;
-}
-
-.vedsidenaf2 {
-  float: left;
-  width: 10%;
-}
-
-.cvikon {
-  display: block;
-  width: 70%;
-}
 
 /*temaikoner på brun baggrund*/
 .ikon {
@@ -243,7 +226,33 @@ footer {
 }
 
 /****************************************** Grid ********************************/
-/* grid til tema ikoner */
+/* grid til tema ikoner*/
+.grid1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+/*******forsidesection deles op for at få dem til at fylde en bestemt mængde plads i grid1********/
+.forsidesection {
+  grid-row: 1/3;
+  margin-inline: auto;
+}
+
+.forsidesection1 {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+/*******flex  putter tekst i bokse så de ligger ved siden af hinanden********/
+.flexkontakt {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexkontakt2 {
+  display: flex;
+  flex-direction: row;
+}
+
 .grid1_1_1_1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -251,8 +260,10 @@ footer {
   justify-content: center;
   background-color: var(--senary-color);
   text-align: center;
-  padding-top: 8rem;
+  padding: 80px 0px 80px 0px;
   width: 100%;
+  /****husk at sætte om i media***/
+  margin-top: 25px;
 }
 
 /*forsidegrid øverst*/
