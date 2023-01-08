@@ -35,6 +35,16 @@ img {
   margin-bottom: 30px;
 }
 
+.imgdoku {
+  margin-top: 87px;
+  margin-bottom: 50px;
+}
+
+.imgstyle {
+  border: 2px solid var(--tertiary-color);
+  border-radius: 5px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -120,7 +130,7 @@ p {
 
 #textlink {
   font-family: Quicksand;
-  color: black;
+  color: var(--tertiary-color);
 }
 
 .somelogo {
@@ -179,7 +189,7 @@ p {
 
 .flexprocess {
   display: flex;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .knapprocess {
@@ -211,15 +221,6 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  padding-bottom: 50px;
-}
-
-.gridimg {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 30px;
-  padding-top: 80px;
 }
 
 .grid1_1knap {

@@ -26,6 +26,15 @@ img {
   padding-bottom: 65px;
 }
 
+.imgdoku {
+  margin-top: 87px;
+}
+
+.imgstyle {
+  border: 2px solid var(--tertiary-color);
+  border-radius: 5px;
+}
+
 .streg {
   display: block;
   margin-left: auto;
@@ -118,6 +127,11 @@ p {
   color: var(--secondary-color);
 }
 
+#textlink {
+  font-family: Quicksand;
+  color: var(--tertiary-color);
+}
+
 .somelogo {
   display: block;
   margin-left: auto;
@@ -187,6 +201,25 @@ p {
   background-color: var(--senary-color);
 }
 
+.flexbefore {
+  display: flex;
+  padding-top: 140px;
+}
+
+.knapbefore {
+  font-family: Quicksand;
+  background-color: var(--tertiary-color);
+  color: var(--quinary-color);
+  border-radius: 5px;
+  justify-content: center;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.knapbefore:hover {
+  color: var(--quinary-color);
+  background-color: var(--senary-color);
+}
 /****************************************grid**************************/
 .grid1_1 {
   display: grid;

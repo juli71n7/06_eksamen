@@ -26,6 +26,16 @@ img {
   padding-bottom: 90px;
 }
 
+.imgdoku {
+  margin-top: 87px;
+  margin-bottom: 50px;
+}
+
+.imgstyle {
+  border: 2px solid var(--tertiary-color);
+  border-radius: 5px;
+}
+
 .streg {
   display: block;
   margin-left: auto;
@@ -214,6 +224,12 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 80px;
+}
+
+.grid1_1img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 .grid1_1footer {

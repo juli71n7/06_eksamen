@@ -34,6 +34,17 @@ img {
   margin-top: 90px;
   margin-bottom: 30px;
 }
+
+.imgdoku {
+  margin-top: 87px;
+  margin-bottom: 50px;
+}
+
+.imgstyle {
+  border: 2px solid var(--tertiary-color);
+  border-radius: 5px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -148,6 +159,25 @@ p {
 }
 
 .knap:hover {
+  color: var(--quinary-color);
+  background-color: var(--senary-color);
+}
+
+.flexasset {
+  display: flex;
+}
+
+.knapasset {
+  font-family: Quicksand;
+  background-color: var(--tertiary-color);
+  color: var(--quinary-color);
+  border-radius: 5px;
+  justify-content: center;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.knapasset:hover {
   color: var(--quinary-color);
   background-color: var(--senary-color);
 }
