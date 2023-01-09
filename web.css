@@ -294,6 +294,7 @@ p {
 @media (max-width: 800px) {
   .grid_1-1 {
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
 
@@ -301,11 +302,5 @@ p {
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 30px;
-  }
-
-  .grid1_1knap {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 80px;
   }
 }

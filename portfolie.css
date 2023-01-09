@@ -17,6 +17,20 @@ img {
   max-width: 100%;
 }
 
+.imglogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.imgstyle {
+  border: 2px solid var(--tertiary-color);
+  border-radius: 5px;
+}
+
 .streg {
   display: block;
   margin-left: auto;
@@ -29,8 +43,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  margin-top: 90px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .somelogo {
@@ -130,6 +144,10 @@ a {
   }
 }
 
+.section1 {
+  max-width: 1200px;
+  margin-inline: auto;
+}
 main {
   max-width: 1200px;
   margin-inline: auto;
@@ -162,7 +180,25 @@ h2 {
   text-align: center;
 }
 
-p {
+.h3center {
+  font-family: Quicksand;
+  letter-spacing: 2px;
+  color: var(--quaternary-color);
+  font-size: 25px;
+  text-align: center;
+  margin: 50px 0px 50px 0px;
+}
+
+h3 {
+  font-family: Quicksand;
+  letter-spacing: 2px;
+  color: var(--quaternary-color);
+  font-size: 25px;
+  margin-bottom: 30px;
+  border-bottom: solid 1px var(--tertiary-color);
+}
+
+.boxtekst {
   font-family: Quicksand;
   letter-spacing: 1.5px;
   padding-bottom: 25px;
@@ -171,16 +207,38 @@ p {
   margin: 0px 250px 100px 250px;
 }
 
+p {
+  font-family: Quicksand;
+  letter-spacing: 1.5px;
+  padding-bottom: 25px;
+  color: var(--secondary-color);
+}
+
 .box {
   border: 1px solid var(--tertiary-color);
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 /************************* Grid ******************************/
 .grid1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.grid1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-top: 100px;
+}
+
+.grid1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: solid 1px var(--tertiary-color);
+  padding-bottom: 50px;
+  gap: 20px;
 }
 
 .grid1_1footer {
