@@ -64,36 +64,36 @@ header {
   z-index: 10;
 }
 
-nav ul {
-  display: flex;
-  font-family: Quicksand;
-  font-size: 1rem;
-  margin: 5px;
-  justify-content: space-between;
+li {
   list-style: none;
-  align-items: center;
-}
-
-nav ul li {
-  width: 100%;
-}
-
-nav ul li a {
-  padding: 1.5rem;
-  text-decoration: none;
-  letter-spacing: 7px;
-  font-style: normal;
-  color: var(--secondary-color);
-  text-align: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-nav ul li a:hover {
-  text-decoration: none;
-  padding: 1.5rem;
-  font-size: 1rem;
   font-family: Quicksand;
+  letter-spacing: 3px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 65px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 130px;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+.nav-link:hover {
   color: var(--tertiary-color);
 }
 
@@ -112,24 +112,27 @@ nav ul li a:hover {
   background-color: black;
 }
 
-@media (max-width 800px) {
+@media (max-width: 800px) {
   .burger {
     display: block;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
   }
 
-  .burger.active.bar:nth-child(2) {
+  .burger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  .burger.active.bar:nth-child(1) {
+  .burger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  .burger.active.bar:nth-child(3) {
+  .burger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .nav ul {
+  .nav-menu {
     position: fixed;
-    left: -100%;
+    right: -100%;
     top: 70px;
     gap: 0;
     flex-direction: column;
@@ -137,8 +140,14 @@ nav ul li a:hover {
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    margin-top: 20px;
   }
-  .nav ul.active {
+
+  .nav-item {
+    margin: 15px;
+  }
+
+  .nav-menu.active {
     left: 0;
   }
 }
@@ -272,16 +281,31 @@ p {
   gap: 30px;
 }
 
-.grid1_1knap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 80px;
-}
-
 .grid1_1footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 15px;
   padding-bottom: 15px;
   gap: 15px;
+}
+
+/************************************ mobil layout *********************************/
+
+@media (max-width: 800px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .grid1_1a {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .grid1_1knap {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 80px;
+  }
 }
