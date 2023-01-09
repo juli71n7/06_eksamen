@@ -35,6 +35,13 @@ img {
   margin-bottom: 30px;
 }
 
+.doodle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 .imgdoku {
   margin-top: 87px;
   margin-bottom: 50px;
@@ -43,6 +50,11 @@ img {
 .imgstyle {
   border: 2px solid var(--tertiary-color);
   border-radius: 5px;
+}
+
+.somelogo {
+  display: block;
+  margin-left: auto;
 }
 
 header {
@@ -85,11 +97,54 @@ nav ul li a:hover {
   color: var(--tertiary-color);
 }
 
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+@media (max-width 800px) {
+  .burger {
+    display: block;
+  }
+
+  .burger.active.bar:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.active.bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .burger.active.bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav ul {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav ul.active {
+    left: 0;
+  }
+}
+
 body {
-  background-image: url(img/webbg.svg);
-  background-position: 50% 0;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: var(--primary-color);
 }
 main {
   max-width: 1200px;
@@ -133,14 +188,9 @@ p {
   color: var(--tertiary-color);
 }
 
-.somelogo {
-  display: block;
-  margin-left: auto;
-}
-
 .box {
   padding: 50px;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-left: 50px;
   margin-right: 50px;
   border: 1px solid var(--tertiary-color);
@@ -214,7 +264,6 @@ p {
   gap: 20px;
   padding: 50px;
   margin-top: 50px;
-  margin-bottom: 100px;
 }
 
 .grid1_1a {

@@ -42,8 +42,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 150px;
 }
 
 .streg {
@@ -53,6 +52,10 @@ img {
   width: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.imgkontakt {
+  margin-bottom: 20px;
 }
 
 header {
@@ -156,7 +159,7 @@ footer {
   font-family: Quicksand;
   letter-spacing: 5px;
   padding-bottom: 20px;
-  padding-top: 116px;
+  padding-top: 77px;
   color: var(--quaternary-color);
   font-size: 30px;
   border-bottom: 1px solid var(--tertiary-color);
@@ -200,6 +203,8 @@ footer {
   letter-spacing: 1.5px;
   padding-bottom: 22px;
   color: var(--secondary-color);
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .ptema {
@@ -250,7 +255,6 @@ footer {
 
 .flexkontakt2 {
   display: flex;
-  flex-direction: row;
 }
 
 .grid1_1_1_1_1 {
