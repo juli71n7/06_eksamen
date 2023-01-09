@@ -280,16 +280,28 @@ p {
   margin-top: 80px;
 }
 
-.grid1_1img {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
 .grid1_1footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 15px;
   padding-bottom: 15px;
   gap: 15px;
+}
+
+/********************************* mobil **********************************/
+
+@media (max-width: 800px) {
+  .grid1_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+  }
+
+  .grid1-1a {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+  }
 }

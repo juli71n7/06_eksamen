@@ -12,7 +12,7 @@ html {
   --quinary-color: #fff2e4;
   --senary-color: #a17c6b;
 }
-
+/**************************** billeder ****************************/
 img {
   max-width: 100%;
 }
@@ -27,6 +27,10 @@ img {
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+.logo {
+  position: sticky;
 }
 
 .imgcv {
@@ -57,6 +61,8 @@ img {
 .imgkontakt {
   margin-bottom: 20px;
 }
+
+/*********************************** menubar *********************************/
 
 header {
   display: flex;
@@ -97,7 +103,7 @@ a {
 .nav-link:hover {
   color: var(--tertiary-color);
 }
-
+/********************************** burgermenu **********************/
 .burger {
   display: none;
   cursor: pointer;
@@ -299,12 +305,12 @@ footer {
   grid-column: 1/2;
 }
 
-/*******flex  putter tekst i bokse så de ligger ved siden af hinanden********/
+/*******flex som putter kontakt tekst i bokse så de ligger ved siden af hinanden********/
 .flexkontakt {
   display: flex;
   flex-direction: column;
 }
-
+/****************** flex der gør at kontaktikoner ligger ud fra kontakt tekst************/
 .flexkontakt2 {
   display: flex;
 }
@@ -318,7 +324,6 @@ footer {
   text-align: center;
   padding: 80px 0px 80px 0px;
   width: 100%;
-  /****husk at sætte om i media***/
   margin-top: 25px;
 }
 
@@ -475,5 +480,58 @@ footer {
   }
   to {
     scale: 0.9 1;
+  }
+}
+
+/********************************* mobil **********************************/
+
+@media (max-width: 800px) {
+  .grid1_1_1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: -230px;
+  }
+  .ptema {
+    margin-bottom: 20px;
+  }
+
+  .pcvtop {
+    font-family: Quicksand;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin: 0 0 50px 0;
+    color: var(--secondary-color);
+  }
+
+  .grid1_1a {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .forsideh1 {
+    text-align: center;
+  }
+
+  .forsideh2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .forsidep {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .grid1_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 20px;
+  }
+
+  .box {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
