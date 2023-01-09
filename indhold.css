@@ -291,17 +291,35 @@ p {
   padding-bottom: 50px;
 }
 
-.grid1_1_1knap {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 80px;
-  grid-gap: 20px;
-}
-
 .grid1_1footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 15px;
   padding-bottom: 15px;
   gap: 15px;
+}
+
+/********************************* mobil **********************************/
+
+@media (max-width: 800px) {
+  .grid1_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+  }
+
+  .grid1_1a {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+  }
+
+  .flexknap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 10px;
+  }
 }
