@@ -17,13 +17,6 @@ img {
   max-width: 100%;
 }
 
-.logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
 .imgpc {
   display: block;
   margin-left: auto;
@@ -41,11 +34,13 @@ img {
   margin-top: 90px;
   margin-bottom: 30px;
 }
+.stregbg {
+  background-color: var(--primary-color);
+}
 
 .doodle {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
   width: 100%;
 }
 
@@ -64,7 +59,7 @@ img {
   margin-left: auto;
 }
 
-/**************************** menu ****************************/
+/******************************************** Menu *****************************************/
 
 li {
   list-style: none;
@@ -118,7 +113,7 @@ footer {
   background-color: var(--senary-color);
 }
 
-/******************************** tekst *************************/
+/******************************************* tekst ******************************************/
 
 h1 {
   font-family: Archivo black;
@@ -160,7 +155,7 @@ p {
   margin-right: 50px;
   border: 1px solid var(--tertiary-color);
 }
-/******************************kanpper**************************/
+/**************************************** kanpper **********************************/
 
 /*******flexknap  putter knapper i boks så de ligger ved siden af hinanden********/
 .flexknap {
@@ -222,7 +217,7 @@ p {
   background-color: var(--senary-color);
 }
 
-/****************************************grid**************************/
+/********************************* Grid ***********************************/
 .grid1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -261,9 +256,12 @@ p {
     grid-template-rows: 1fr 1fr;
   }
 
+  h2 {
+    font-size: 1.3rem;
+  }
+
   header {
     display: flex;
-    justify-content: space-between;
     top: 0;
     z-index: 10;
   }

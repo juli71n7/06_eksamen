@@ -58,6 +58,10 @@ img {
   margin-bottom: 30px;
 }
 
+.stregbg {
+  background-color: var(--primary-color);
+}
+
 .imgkontakt {
   margin-bottom: 20px;
 }
@@ -133,12 +137,6 @@ footer {
   font-size: 4rem;
   padding-top: 7rem;
   letter-spacing: 5px;
-}
-
-@media (max-width: 1200px) {
-  .forsideh1 {
-    font-size: 2rem;
-  }
 }
 
 .forsideh2 {
@@ -280,7 +278,7 @@ footer {
   text-align: center;
   padding: 80px 0px 80px 0px;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 /*forsidegrid øverst*/
@@ -310,7 +308,7 @@ footer {
   gap: 15px;
 }
 
-/****************************************java %bar animation*************************************/
+/****************************************java %bar animation *************************************/
 
 .skillbarp {
   font-family: Quicksand;
@@ -439,15 +437,42 @@ footer {
   }
 }
 
-/********************************* mobil **********************************/
+/****************************************** mobil *******************************************/
 
 @media (max-width: 800px) {
   .grid1_1_1_1_1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    margin-top: -235px;
+    margin-top: -255px;
   }
+
+  .grid1_1a {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .grid1_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 20px;
+  }
+  .forsideh1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .forsideh2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .forsidep {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
   .ptema {
     margin-bottom: 20px;
   }
@@ -460,32 +485,6 @@ footer {
     color: var(--secondary-color);
   }
 
-  .grid1_1a {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
-
-  .forsideh1 {
-    text-align: center;
-  }
-
-  .forsideh2 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .forsidep {
-    text-align: center;
-    font-size: 0.9rem;
-  }
-  .grid1_1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-left: 20px;
-  }
-
   .box {
     margin-left: 20px;
     margin-right: 20px;
@@ -493,7 +492,6 @@ footer {
 
   header {
     display: flex;
-    justify-content: space-between;
     top: 0;
     z-index: 10;
   }

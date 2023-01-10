@@ -43,6 +43,9 @@ img {
   margin-top: 90px;
   margin-bottom: 30px;
 }
+.stregbg {
+  background-color: var(--primary-color);
+}
 
 .doodle {
   display: block;
@@ -245,7 +248,6 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  padding-bottom: 50px;
 }
 
 .grid1_1footer {
@@ -274,15 +276,15 @@ p {
   }
 
   .flexknap {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 10px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.3rem;
   }
 
   header {
     display: flex;
-    justify-content: space-between;
     top: 0;
     z-index: 10;
   }

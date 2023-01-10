@@ -44,6 +44,9 @@ img {
   margin-top: 90px;
   margin-bottom: 30px;
 }
+.stregbg {
+  background-color: var(--primary-color);
+}
 
 .doodle {
   display: block;
@@ -156,7 +159,7 @@ p {
 }
 /******************************kanpper**************************/
 
-/*******flexknap  putter knapper i boks så de ligger ved siden af hinanden********/
+/*******flexknap putter knapper i boks så de ligger ved siden af hinanden********/
 .flexknap {
   display: flex;
   flex-direction: row;
@@ -229,7 +232,6 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  padding-bottom: 50px;
 }
 
 .grid1_1knap {
@@ -256,16 +258,19 @@ p {
     padding: 10px;
   }
 
-  .grid1-1a {
+  .grid1_1a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 10px;
   }
 
+  h2 {
+    font-size: 1.3rem;
+  }
+
   header {
     display: flex;
-    justify-content: space-between;
     top: 0;
     z-index: 10;
   }

@@ -45,8 +45,11 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+.stregbg {
+  background-color: var(--primary-color);
 }
 
 .somelogo {
@@ -250,7 +253,6 @@ p {
 
   header {
     display: flex;
-    justify-content: space-between;
     top: 0;
     z-index: 10;
   }
