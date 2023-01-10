@@ -54,12 +54,6 @@ img {
   margin-left: auto;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  top: 0;
-  z-index: 10;
-}
 li {
   list-style: none;
   font-family: Quicksand;
@@ -83,7 +77,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 130px;
+  padding: 30px;
 }
 
 .nav-link {
@@ -105,45 +99,7 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: black;
-}
-
-@media (max-width: 700px) {
-  .burger {
-    display: block;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px;
-  }
-
-  .burger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .burger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .burger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: var(--primary-color);
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-  }
-
-  .nav-item {
-    margin: 15px;
-  }
-  .nav-menu.active {
-    left: 0;
-  }
+  background-color: var(--tertiary-color);
 }
 
 .section1 {
@@ -290,5 +246,49 @@ p {
 
   h1 {
     font-size: 1.8rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    z-index: 10;
+  }
+
+  .burger {
+    display: block;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px;
+  }
+
+  .burger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .burger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 15px;
+  }
+  .nav-menu.active {
+    left: 0;
   }
 }
